@@ -1,0 +1,101 @@
+\documentclass[paper=a4, fontsize=11pt,twoside]{scrartcl}
+\usepackage{amsmath,amsfonts,amsthm,amssymb}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{natbib}
+\usepackage[a4paper,pdftex]{geometry}	% A4paper margins
+\setlength{\oddsidemargin}{5mm}			% Remove 'twosided' indentation
+\setlength{\evensidemargin}{5mm}
+\graphicspath{ {./images} }
+
+% ====================================================================
+% Definitions 
+% ====================================================================
+\newcommand{\HRule}[1]{\rule{\linewidth}{#1}} 	% Horizontal rule
+
+\makeatletter							% Title
+\def\printtitle{%						
+    {\centering \@title\par}}
+\makeatother									
+
+\makeatletter							% Author
+\def\printauthor{%					
+    {\centering \large \@author}}				
+\makeatother							
+
+% ====================================================================
+% Metadata
+% ====================================================================
+\title{	\normalsize \textsc{VIETNAM NATIONAL UNIVERSITY} 	% Subtitle
+		 	\\[2.0cm]								% 2cm spacing
+			\HRule{0.5pt} \\						% Upper rule
+			\LARGE \textbf{\uppercase{Face Masked Detection}}	% Title
+			\HRule{2pt} \\ [0.5cm]		% Lower rule + 0.5cm spacing
+			\normalsize \today			% Todays date
+		}
+
+\author{
+		Dung M. Nguyen\\	
+		Student ID : 18020370\\	
+        \texttt{manhdung20112000@gmail.com} \\
+}
+
+
+\begin{document}
+% ====================================================================
+% Maketitle and table of contents
+% ====================================================================
+\thispagestyle{empty}		% Remove page numbering on this page
+
+\printtitle					% Print the title data as defined above
+  	\vfill
+\printauthor				% Print the author data as defined above
+\newpage
+
+\tableofcontents
+\newpage
+% ====================================================================
+% Begin document
+% ====================================================================
+
+    \begin{abstract}
+        New species of virus was found in late 2018, early 2019 at Wuhan 
+        has become one of the biggest disaster that human have to face 
+        recently. Coronavirus has affected the world seriously and
+        it's still spreeding continuously until these day, which affects not only
+        the worldwide economic but many aspect of life of millions people. 
+
+        In the war against COVID-19, it require the whole world to join hands 
+        in this fight. While the infomation about this new species of Coronavirus
+        are still in question, however with the avaiable dataset, artificial intellgence (AI) 
+        has proved its role in this fight by many of AI, machine-learning application to
+        helping the healthcare systems, such as: 
+        \begin{itemize}
+            \item Safety distance tracking systems
+            \item Social simplification tracking systems
+            \item Diagnosing covid-19 by Chest X-ray \\
+            \ldots
+        \end{itemize} 
+    \end{abstract}
+
+    \section{Introduction}
+    \label{sec:intro}
+
+    \section{Project motivation}
+    \label{sec:motivate}
+
+    \section{Related Work}
+    \label{sec:relate}
+
+    \section{Methodology}
+    \label{sec:method}
+
+    \section{Experiment results}
+    \label{sec:res}
+
+    \section{Conclusion}
+    \label{sec:conclusion}
+
+    \bibliographystyle{unsrt}
+    \bibliography{refs} 
+\end{document}
