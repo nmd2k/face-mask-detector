@@ -1,1 +1,1 @@
-# A custom YOLOv5 for masked face detector
+# A custom YOLOv3 fastest for face mask detector
