@@ -14,7 +14,7 @@ By using the pre-defined models that were provided and supported by [ultralytics
 [assets_3]: https://github.com/ultralytics/yolov3/releases
 
 Model |size<br><sup>(pixels) |mAP<sup>val<br>0.5:0.95 |mAP<sup>test<br>0.5:0.95 |mAP<sup>val<br>0.5 |Speed<br><sup>V100 (ms) | |params<br><sup>(M) 
----   |---  |---        |---         |---             |---                |---|---              |---
+---   |---                   |---                     |---                      |---                |---                     |---|---              
 [YOLOv5s][assets_5]    |640  |**59.6** |**59.6** |**89.6** |**4.5**| |7.3   
 [YOLOv5m][assets_5]    |640  | -       | -       | -       | -     | |21.4  
 [YOLOv5l][assets_5]    |640  | -       | -       | -       | -     | |47.0  
