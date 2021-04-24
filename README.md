@@ -25,7 +25,7 @@ Model |size<br><sup>(pixels) |mAP<sup>val<br>0.5:0.95 |mAP<sup>test<br>0.5:0.95 
 [YOLOv3-SSP][assets_3]       |640  | -       | -       | -       | -   | |63.0
 [YOLOv3][assets_3]           |640  | -       | -       | -       | -   | |61.9
 
-
+We public our training result in [wandb](https://wandb.ai/) for if you want to dig deeper inside each model's training process, then make sure check out our project in [W&B](https://wandb.ai/nmd2000/Face_Mask).
 # [Dataset](#dataset)
 The dataset is composed of [WIDER Face](http://shuoyang1213.me/WIDERFACE/) and [MAFA](www.escience.cn/people/geshiming/mafa.html) by [AIZOOTech](https://github.com/AIZOOTech/FaceMaskDetection). 
 
