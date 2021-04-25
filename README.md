@@ -52,4 +52,4 @@ We are still working on deployment . . .
 - Github: [HaiNguyen2903](https://github.com/HaiNguyen2903)
 
 **Hoang Huy Nguyen**
-- Github: [NA](https://github.com/)
+- Github: [hhoanguet](https://github.com/hhoanguet)
