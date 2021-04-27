@@ -2,7 +2,7 @@ weights: yolov5s.pt
 cfg: ''
 data: ./models/data.yaml
 hyp: data/hyp.scratch.yaml
-epochs: 300
+epochs: 28
 batch_size: 32
 img_size:
 - 640
@@ -14,7 +14,7 @@ notest: false
 noautoanchor: false
 evolve: false
 bucket: ''
-cache_images: true
+cache_images: false
 image_weights: false
 device: ''
 multi_scale: false
@@ -36,5 +36,5 @@ save_period: -1
 artifact_alias: latest
 world_size: 1
 global_rank: -1
-save_dir: Face_Mask/exp2
+save_dir: Face_Mask/exp
 total_batch_size: 32

@@ -23,7 +23,7 @@ adam: false
 sync_bn: false
 local_rank: -1
 workers: 8
-project: Face_Mask
+project: runs/train
 entity: null
 name: exp
 exist_ok: false
@@ -36,5 +36,5 @@ save_period: -1
 artifact_alias: latest
 world_size: 1
 global_rank: -1
-save_dir: Face_Mask/exp
+save_dir: runs/train/exp
 total_batch_size: 32

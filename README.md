@@ -13,17 +13,17 @@ By using the pre-defined models that were provided and supported by [ultralytics
 [assets_5]: https://github.com/ultralytics/yolov5/releases
 [assets_3]: https://github.com/ultralytics/yolov3/releases
 
-Model |size<br><sup>(pixels) |mAP<sup>val<br>0.5:0.95 |mAP<sup>test<br>0.5:0.95 |mAP<sup>val<br>0.5 |Speed<br><sup>V100 (ms) | |params<br><sup>(M) 
----   |---                   |---                     |---                      |---                |---                     |---|---              
-[YOLOv5s][assets_5]    |640  |59.6     |  59.6   |89.6     |**4.5**| |7.3   
-[YOLOv5m][assets_5]    |640  |63.7     |**73.9** |91.9     |8.5    | |21.4  
-[YOLOv5l][assets_5]    |640  |**64.6** |65.0     |**92.1** |11.8   | |47.0  
-[YOLOv5x][assets_5]    |640  | -       | -       | -       | -     | |87.7  
+Model |size<br><sup>(pixels) |mAP<sup>val<br>0.5:0.95 |mAP<sup>val<br>0.5 |mAP<sup>test<br>0.5:0.95 |mAP<sup>test<br>0.5 |Speed<br><sup>V100 (ms) | |params<br><sup>(M) 
+---   |---                   |---                     |---                |---                      |---                |---                     |---|---              
+[YOLOv5s][assets_5]    |640  |**65.4** |**93.1** | 65.4    |**93.2** |**6.3**| |7.3   
+[YOLOv5m][assets_5]    |640  |63.7     |91.9     |**73.9** | - |8.5    | |21.4  
+[YOLOv5l][assets_5]    |640  |64.6     |**92.1** |65.0     | - |11.8   | |47.0  
+[YOLOv5x][assets_5]    |640  | -       | -       | -       | - |  -    | |87.7  
 | | | | | | || |
-[YOLOv3 fastest][assets_3]   |640  | -       | -       | -       | -       | | - 
-[YOLOv3-tiny][assets_3]      |640  |**49.8** |**49.7** |**84.0** | **3.6** | |8.8  
-[YOLOv3-SSP][assets_3]       |640  | -       | -       | -       | -       | |63.0
-[YOLOv3][assets_3]           |640  | -       | -       | -       | -       | |61.9
+[YOLOv3 fastest][assets_3]   |640  | -       | -       | -       | -       | -       | | | - 
+[YOLOv3-tiny][assets_3]      |640  |**55.7** |**87.9** |**55.6** |**87.8** |**3.4**  | |8.8  
+[YOLOv3-SSP][assets_3]       |640  | -       | -       | -       | -       | -       | |63.0
+[YOLOv3][assets_3]           |640  | -       | -       | -       | -       | -       | |61.9
 
 We public our training result in [wandb](https://wandb.ai/) for if you want to dig deeper inside each model's training process, then make sure check out our project in [W&B](https://wandb.ai/nmd2000/Face_Mask).
 # [Dataset](#dataset)
