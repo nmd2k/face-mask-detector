@@ -3,6 +3,9 @@ import random
 import secrets
 from shutil import copyfile
 
+def create_dir(path):
+    if not os.path.exists(path):
+        os.makedirs(path)
 
 PATH = 'data/images/train'
 random.seed(42)
@@ -16,6 +19,9 @@ train_len = train_len - valid_len
 
 print("Train length:", train_len)
 print("Valid length:", valid_len)
+
+create_dir('data/images/valid')
+create_dir('data/labels/valid')
 
 i=0
 while i < valid_len:
