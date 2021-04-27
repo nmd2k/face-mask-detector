@@ -1,0 +1,10 @@
+train: data/images/train/
+val: data/images/valid/
+
+# number of classes
+nc: 2
+
+# class names
+names: 
+- face
+- face_mask
