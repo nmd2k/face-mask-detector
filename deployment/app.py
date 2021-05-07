@@ -1,6 +1,7 @@
 from flask import Flask, render_template, Response
 import argparse
 
+import os
 import cv2
 import torch
 import torch.backends.cudnn as cudnn
@@ -69,7 +70,7 @@ def gen():
             count_frame = 0
 
         # string result
-        s = f'Scanning | '+'%gx%g ' % img.shape[2:]
+        s = f'%gx%g ' % img.shape[2:]
 
         if is_predicting:    
             is_predicting = False
@@ -81,12 +82,11 @@ def gen():
 
             for i, det in enumerate(pred):  # detections per image
                 if len(det):
-                    s = 'Found | '
                     # Rescale boxes from img_size to im0 size
                     det[:, :4] = scale_coords(img.shape[2:], det[:, :4], img0.shape).round()
 
                     # Print time (inference + NMS)
-                    s += f"| Done. ({t2 - t1:.3f}s)"
+                    s += f"| ({t2 - t1:.3f}s) | Fps: {round(1/(t2-t1), 1)}"
 
                     # Write results
                     for *xyxy, conf, cls in reversed(det):
@@ -98,9 +98,8 @@ def gen():
         cv2.imwrite('frame.jpg', img0)
         yield (b'--frame\r\n'
                b'Content-Type: image/jpeg\r\n\r\n' + open('frame.jpg', 'rb').read() + b'\r\n')
-        
         # String results
-        # print(s)
+        print(s)
         # wait key to break
         if cv2.waitKey(1) & 0xFF == ord('q'):
             break
