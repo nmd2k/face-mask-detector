@@ -2,8 +2,9 @@
 
 # base ----------------------------------------
 opencv-python>=4.1.2
-# torch>=1.7.0 # in raspberry has difference architecture, have to install by hand
-# torchvision>=0.8.1 # same
 requests>=2.25.1
 matplotlib>=3.2.2
 numpy>=1.18.5
+
+# deployment ----------------------------------
+flask >=1.1.1
