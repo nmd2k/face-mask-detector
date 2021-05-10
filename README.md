@@ -15,10 +15,10 @@ By using the pre-defined models that were provided and supported by [ultralytics
 
 Model |size<br><sup>(pixels) |mAP<sup>val<br>0.5:0.95 |mAP<sup>val<br>0.5 |mAP<sup>test<br>0.5:0.95 |mAP<sup>test<br>0.5 |Speed<br><sup>V100 (ms) | |params<br><sup>(M) 
 ---   |---                   |---                     |---                |---                      |---                |---                     |---|---              
-[YOLOv5s][assets_5]    |640  |**65.4** |**93.1** | 65.4    |**93.2** |**6.3**| |7.3   
-[YOLOv5m][assets_5]    |640  |63.7     |91.9     |**73.9** | - |8.5    | |21.4  
-[YOLOv5l][assets_5]    |640  |64.6     |**92.1** |65.0     | - |11.8   | |47.0  
-[YOLOv5x][assets_5]    |640  | -       | -       | -       | - |  -    | |87.7  
+[YOLOv5s][assets_5]    |640  |  65.4    |  93.1   |  65.4   |  93.2   |**6.3**| |7.3   
+[YOLOv5m][assets_5]    |640  |**66.5**  |**93.9** |**66.7** |**93.7**|8.5    | |21.4  
+[YOLOv5l][assets_5]    |640  | -        | -       | _       | - |  -    | |47.0  
+[YOLOv5x][assets_5]    |640  | -        | -       | -       | - |  -    | |87.7  
 | | | | | | || |
 [YOLOv3 fastest][assets_3]   |640  | -       | -       | -       | -       | -       | | | - 
 [YOLOv3-tiny][assets_3]      |640  |**55.7** |**87.9** |**55.6** |**87.8** |**3.4**  | |8.8  
